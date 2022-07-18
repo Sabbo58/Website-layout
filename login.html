@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <script src="https://kit.fontawesome.com/3ed58cb1f4.js" crossorigin="anonymous"></script>
+    <style>
+        .form-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 85px;
+            background-color: cadetblue;
+            margin-left: 200px;
+            margin-right: 200px;
+            padding-bottom: 30px;
+
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+        }
+
+        .login-form input {
+            margin-top: 1em;
+            font-size: 1.2em;
+            padding: 5px 10px;
+        }
+
+        #log {
+            background-color: skyblue;
+            border: 0;
+            border-radius: 5px;
+            color: white;
+            font-weight: 700;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            background-color: skyblue;
+            font-size: 20px;
+            border: 0;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-left: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .distance a {
+            background-color: gray;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span>
+                <a href="#">Home</a>
+                <a href="#">Profile</a>
+                <a href="#">Classes</a>
+                <a href="#">infoBox</a>
+            </span>
+            <span class="distance">
+                <a href="#"><i class="fa-solid fa-right-from-bracket"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+            </span>
+
+        </nav>
+    </header>
+    <section class="form-section">
+        <form class="login-form">
+            <h1>please login</h1>
+
+            <input type="text" name="First Name" placeholder="First Name" required>
+
+            <input type="text" name="last Name" placeholder="Last Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <input type="password" name="password" value="" placeholder="Password">
+            <input type="button" value="login" id="log">
+        </form>
+    </section>
+</body>
+
+</html>
